@@ -7,6 +7,37 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+// Solution 1: Reverse a string and then compare
+// function palindrome(str) {
+//     let reversed = ""
+//     for (let letter of str) {
+//         reversed = letter + reversed
+//     }
+//     return str == reversed
+// }
+
+// Solution 2
+// function palindrome(str) {
+//     let arr = str.split("")
+//     let len = arr.length
+
+//     let middleIndex = len / 2
+
+//     let isPalindrome = true
+
+//     for (let i = 0; i <= middleIndex; i++) {
+//         let leftChar = arr[i]
+//         let rightChar = arr[len - 1 - i]
+//         if (leftChar != rightChar) {
+//             isPalindrome = false
+//             break
+//         }
+//     }
+//     return isPalindrome
+// }
+
+function palindrome(str) {
+    
+}
 
 module.exports = palindrome;
